@@ -1,0 +1,62 @@
+
+
+.heading{
+    font-size: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+}
+
+.para{
+    font-weight:bolder;
+}
+
+
+.center{
+    text-align: center;
+}
+
+.start{
+    text-align: start;
+}
+
+.end{
+    text-align: end;
+}
+
+
+.paragraph {
+    line-height: 3;
+    word-spacing: 20px;
+    text-indent: 50px;
+
+}
+
+.letter{
+    letter-spacing: 50px;
+}
+
+.capital {
+    
+    text-transform: uppercase;
+
+}
+.single{
+    text-transform: capitalize;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.link{
+    text-decoration:none;
+}
+
+.list {
+    list-style: none;
+}
+
+.heading2{
+    color: slateblue;
+}

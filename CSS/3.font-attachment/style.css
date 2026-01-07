@@ -1,0 +1,27 @@
+@font-face {
+  font-family: xyz;
+  src: url(./asset/open-sans/OpenSans-Bold.ttf);
+}
+
+body {
+  /* inbuilt method */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  /* external method */
+  font-family: "Open Sans", sans-serif;
+
+  /* using offline and font face method */
+
+  font-family: xyz;
+}
+
+
+.smiley {
+    font-size: 200px;
+}
+
+.ri-building-line {
+    font-size: 100px;
+    color: brown;
+}
