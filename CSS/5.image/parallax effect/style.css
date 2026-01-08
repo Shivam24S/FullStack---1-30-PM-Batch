@@ -11,9 +11,9 @@
 
 .image {
   background: url("../asset/pexels-pixabay-355465.jpg");
-  height: 2000px;
-  width: 100%;
+  height: 1000px;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 #footer {
