@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  height: 800px;
+  border: 2px solid red;
+}
+
+.image {
+  background: url("../asset/pexels-pixabay-355465.jpg");
+  height: 2000px;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+#footer {
+  height: 800px;
+  border: 2px solid red;
+}

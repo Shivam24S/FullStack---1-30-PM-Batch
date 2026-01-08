@@ -1,0 +1,27 @@
+
+/*  * universal selector */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: bisque;
+}
+
+.box {
+  background-color: cadetblue;
+  border-radius: 50px;
+  height: 300px;
+  width: 300px;
+  border: 5px dotted black;
+  padding: 20px;
+  margin: 50px;
+  /* this will apply all four side */
+
+  /* padding and margin have top bottom and left and right properties also */
+}
