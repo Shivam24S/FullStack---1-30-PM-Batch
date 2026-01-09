@@ -1,0 +1,34 @@
+.text {
+  text-align: center;
+}
+
+.linear {
+  background-image: linear-gradient(rgb(34, 255, 34), rgb(12, 34, 236));
+  height: 200px;
+  width: 200px;
+}
+
+.radial {
+  background-image: radial-gradient(red, yellow);
+  height: 200px;
+  width: 200px;
+}
+
+.conic {
+  background-image: conic-gradient(rgb(249, 84, 255), orange);
+  height: 200px;
+  width: 200px;
+}
+
+.rainbow {
+  background-image: linear-gradient(90deg,
+    blue,
+    yellow,
+    orange,
+    red,
+    green,
+    skyblue,
+    indigo
+  );
+  height: 100px;
+}
