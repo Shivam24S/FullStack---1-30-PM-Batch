@@ -1,0 +1,64 @@
+.span {
+  color: red;
+  border: 2px solid black;
+
+  /* in inline elements height and width will not be applied */
+
+  /* height: 500px;
+    width: 500px; */
+}
+
+span {
+  /* in block elements elements will be start always in new line and occupy whole space */
+
+  /* also we can apply height and width property in display block elements */
+  display: block;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+}
+
+/* in inline-block  the elements will be work as inline elements but we can apply height and width */
+
+div {
+  display: inline-block;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+}
+
+.none {
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+  display: none;
+
+  /* display none will not occupy any space it will act like it was never before in layout it completely remove from layout structure */
+}
+
+.hidden {
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+  visibility: hidden;
+
+  /* visibility hidden will hidden the elements but it will still occupy the space in layout its not visible in website but it still occupy the space */
+}
+
+.car {
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.box-1,.box-2 {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+.box-2{
+    float: right;
+}
+
+

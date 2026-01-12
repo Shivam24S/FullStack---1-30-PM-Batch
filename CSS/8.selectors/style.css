@@ -1,0 +1,68 @@
+.box {
+  border: 5px dotted rgb(255, 43, 43);
+}
+
+.big {
+  height: 300px;
+  width: 300px;
+  background-color: steelblue;
+}
+
+.small {
+  height: 150px;
+  width: 150px;
+  background-color: seagreen;
+}
+
+.parent p {
+  color: rgb(168, 48, 0);
+  font-size: large;
+}
+
+/* selectors */
+
+/* universal selector */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* tag selector */
+
+p {
+  color: cadetblue;
+}
+
+/* descendant selector */
+
+div p {
+  color: yellowgreen;
+}
+
+/* group selector */
+
+div,
+p {
+  color: chocolate;
+}
+
+div > p {
+  color: cornflowerblue;
+}
+
+/* pseudo elements */
+
+.outside::first-letter {
+  font-size: 200px;
+  color: rgb(155, 216, 33);
+}
+
+ul::first-line {
+  color: darkseagreen;
+  font-family: cursive;
+  font-size: 200px;
+}
+
+/* pseudo classes  */
