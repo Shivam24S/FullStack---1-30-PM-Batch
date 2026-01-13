@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 500vh;
+}
+
+.container {
+  height: 800px;
+  width: 800px;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 100px;
+  /* position: relative; */
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  color: white;
+}
+
+/* default position will be static in that there will be no effect of top bottom left right property */
+
+.blue {
+  background-color: rgb(62, 62, 255);
+  position: static;
+  top: 500px;
+  bottom: 20px;
+  left: 320px;
+  right: 100px;
+}
+
+/* relative position will take reference to its parent and move using their parent reference  */
+
+.green {
+  background-color: rgb(35, 187, 35);
+  position: relative;
+  top: 50px;
+  right: 100px;
+  z-index: 1;
+}
+
+/* position absolute will check relative position in their parent if it not get then it will take root elements reference and moving accordingly  */
+
+.red {
+  background-color: red;
+  position: absolute;
+  left: 500px;
+  z-index: 2;
+}
+
+/* it will be fixed in layout and do not move as per view change  */
+
+.purple {
+  background-color: purple;
+  position: fixed;
+  bottom: 200px;
+}
+
+.pink {
+  background-color: pink;
+  position: sticky;
+  top: 200px;
+}
