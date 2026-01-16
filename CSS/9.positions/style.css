@@ -63,4 +63,5 @@
   background-color: pink;
   position: sticky;
   top: 200px;
+  z-index: 3;
 }

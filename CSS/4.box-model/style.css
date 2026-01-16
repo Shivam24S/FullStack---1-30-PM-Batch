@@ -1,13 +1,10 @@
-
 /*  * universal selector */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
 
 body {
   background-color: bisque;
@@ -21,6 +18,8 @@ body {
   border: 5px dotted black;
   padding: 20px;
   margin: 50px;
+  border-style: dashed;
+
   /* this will apply all four side */
 
   /* padding and margin have top bottom and left and right properties also */
