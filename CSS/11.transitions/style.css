@@ -1,0 +1,20 @@
+.box {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  /* transition-duration: 1s; */
+  /* transition-delay: 1s; */
+  /* transition-property: background-color, border-radius; */
+  /* transition-timing-function: cubic-bezier(0.85, 0.47, 0, 0.42); */
+  transition:
+    1s background-color,
+    border-radius 1s cubic-bezier(0.85, 0.47, 0, 0.42);
+}
+
+.box:hover {
+  background-color: cadetblue;
+  border-radius: 50%;
+}
