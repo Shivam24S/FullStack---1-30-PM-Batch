@@ -12,20 +12,26 @@
   margin-bottom: 50px;
   border: 2px solid black;
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  /* grid-template-columns: 100px 100px 100px; */
   /* grid-template-columns: auto auto auto; */
   /* grid-template-columns: 1fr 1fr 5fr; */
-  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   /* row-gap: 10px;
   column-gap: 10px; */
 
   /* grid-template-rows: 100px 200px 400px; */
 
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center; */
+  /* align-content: center; */
 }
 
 .box {
   border: 1px solid black;
 }
+
+/* 
+#box-5{
+  justify-self: center;
+  align-self: center;
+} */
