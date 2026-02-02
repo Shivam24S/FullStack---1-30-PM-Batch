@@ -97,3 +97,112 @@ nav li a:hover {
 .language a {
   text-decoration: none;
 }
+
+#hero,
+#hero-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-content: center; */
+  margin: 5rem;
+  flex: 1;
+  gap: 3rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.join-btn {
+  /* width: 12vw; */
+  height: 7vh;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f1f1f1;
+  color: rgba(0, 0, 0, 0.795);
+  padding: 1rem;
+}
+
+.container-right {
+  background-image: url("./asset/hero.jpg");
+  height: 70vh;
+  width: 100%;
+  background-position: right;
+  flex: 1;
+}
+
+.container-right-2 {
+  background-image: url("./asset/hero-2.jpg");
+  height: 70vh;
+  width: 100%;
+  background-position: right;
+  flex: 1;
+}
+
+#subscription {
+  background-color: #00050d;
+  display: flex;
+  padding: 5rem;
+}
+
+.subscription-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.subscription-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.subscription-right img {
+  height: 20vh;
+  border-radius: 20px;
+}
+
+.subscription-right img:hover {
+  box-shadow: rgba(255, 255, 255, 0.466) 0px 3px 8px;
+}
+
+.subscription-title {
+  font-size: 3rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 3vh;
+  margin-top: 2rem;
+}
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #79b8f3;
+}
+
+.copyright {
+  color: #8197a4;
+  margin-bottom: 1rem;
+}
