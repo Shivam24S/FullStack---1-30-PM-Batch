@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #000000;
+  background-color: #00050d;
   color: white;
 }
 
@@ -129,12 +129,19 @@ nav li a:hover {
 .movie-description {
   font-size: 1.5rem;
   font-weight: bold;
-  /* display: none; */
+  display: none;
+  position: relative;
+}
+
+.info:hover .movie-description {
+  display: block;
+  position: absolute;
 }
 
 .hero-btn {
   display: flex;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .prime-btn {
@@ -160,6 +167,58 @@ nav li a:hover {
   border: none;
 }
 
-.bag{
-    color: gold;
+.bag {
+  color: gold;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 4rem;
+}
+
+.headings {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.movie-detail{
+  border: 2px solid black;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 18vw;
+  transition: all 1s;
+  
+}
+.movies-image{
+  height: 22vh;
+  width: 16vw;
+  border-radius: 10px;
+}
+
+.card-descriptions{
+  display: none;
+   background: black;
+
+}
+
+.movie-detail:hover{
+  scale: 1.1;
+}
+
+.movie-detail:hover .card-descriptions{
+  scale: 1.1;
+  display: block;
+  position: absolute;
+}
+
+.movie-info{
+  display: flex;
+  gap: 2rem;
 }
