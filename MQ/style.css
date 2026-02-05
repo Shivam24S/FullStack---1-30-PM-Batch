@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+}
+
+/* latest syntax */
+@media (width<=400px) {
+  body {
+    background-color: black;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .box {
+    border: 2px solid white;
+    background-color: brown;
+  }
+}
+
+/* orientation */
+
+@media (orientation: landscape) {
+  body {
+    background-color: aquamarine;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .box {
+    background-color: chocolate;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: tomato;
+  }
+}
+
+/* media queries using old syntax */
+
+/* min-width */
+
+/* starting point  */
+
+@media (min-width: 600px) {
+  body {
+    background-color: teal;
+  }
+
+  .container {
+    display: flex;
+  }
+}
+
+/* ending point */
+@media (max-width: 200px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* @media (min-width: 400px) and (max-width: 800px) {
+  body {
+    background-color: steelblue;
+  }
+} */
+
+/* using new syntax */
+
+@media (400px<width<800px) {
+  body {
+    background-color: steelblue;
+  }
+}
+
+/* devices */
+
+/* screen */
+
+@media screen and (min-width: 900px) {
+  .box {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+/* print */
+
+@media print and (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    height: 50px;
+    width: 50px;
+  }
+}
