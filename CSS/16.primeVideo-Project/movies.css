@@ -171,54 +171,57 @@ nav li a:hover {
   color: gold;
 }
 
-.movie-card {
+.movies {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1rem;
   padding: 1rem 4rem;
-}
-
-.headings {
-  display: flex;
   gap: 1rem;
 }
 
+.title {
+  display: flex;
+  gap: 2rem;
+}
+.movie-card-list {
+  display: flex;
+  gap: 4rem;
+}
 
-.movie-detail{
-  border: 2px solid black;
-  background: black;
-  color: white;
+.movie-details {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  width: 18vw;
+  background-color: #00050d;
+  width: 20vw;
+  border-radius: 10px;
+  /* position: relative; */
   transition: all 1s;
-  
 }
-.movies-image{
-  height: 22vh;
-  width: 16vw;
+
+.movie-poster img {
+  height: 25vh;
+  width: 20vw;
   border-radius: 10px;
 }
 
-.card-descriptions{
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 1rem;
   display: none;
-   background: black;
-
+  position: relative;
+  width: 20vw;
+  background-color: black;
+  transition: all 1s;
+  border-radius: 10px;
 }
 
-.movie-detail:hover{
-  scale: 1.1;
+.movie-details:hover {
+  transform: scale(1.1);
 }
 
-.movie-detail:hover .card-descriptions{
-  scale: 1.1;
+.movie-details:hover .movie-info {
   display: block;
   position: absolute;
-}
-
-.movie-info{
-  display: flex;
-  gap: 2rem;
+  z-index: 1;
 }
