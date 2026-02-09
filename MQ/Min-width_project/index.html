@@ -10,25 +10,40 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <h4 class="logo">TechNova</h4>
+        <h2 class="logo">TechNova</h2>
         <ul>
           <li>Home</li>
           <li>About</li>
           <li>Service</li>
+          <li>Contact</li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="hero">
-        <h3>Welcome to TechNova Solutions</h3>
-        <p class="para">
-          Empowering businesses with smart technology and creative solutions.
-        </p>
+        <div class="content">
+          <h1>
+            Welcome to <br />
+            TechNova
+          </h1>
+          <p class="para">
+            Empowering businesses with smart technology and creative solutions.
+          </p>
+
+          <button class="btn">Getting started</button>
+        </div>
       </section>
 
       <section id="About">
@@ -70,6 +85,78 @@
               Crafting visually engaging and responsive web interfaces using
               modern frameworks like React, Vue, and Angular
             </p>
+            <button class="contact">Contact us</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="card">
+            <img src="./service/backend_1.jpg" alt="backend" />
+            <h2>Backend Development</h2>
+            <p>
+              Building robust, secure, and scalable server-side applications and
+              REST/GraphQL APIs with Node.js, Express, or Django.
+            </p>
+            <button class="contact">Contact us</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="card">
+            <img src="./service/fullstack.jpg" alt="fullstack" />
+            <h2>Full Stack Solutions</h2>
+            <p>
+              End-to-end development solutions combining frontend and backend
+              technologies for dynamic
+            </p>
+            <button class="contact">Contact us</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="section-heading">Contact us</h1>
+        <div class="contact-container">
+          <div class="contact-left">
+            <div class="contact-shape">
+              <i class="fa-solid fa-location-dot icon"></i>
+              <p>Bhavnagar,Gujarat-364001</p>
+            </div>
+            <div class="contact-shape">
+              <i class="fa-solid fa-phone icon"></i>
+              <p>987654321</p>
+            </div>
+            <div class="contact-shape">
+              <i class="fa-solid fa-envelope icon"></i>
+              <p>TechNova@gmail.com</p>
+            </div>
+            <div class="social-links">
+              <i class="fa-brands fa-linkedin icon"></i>
+              <i class="fa-brands fa-x-twitter icon"></i>
+              <i class="fa-brands fa-github icon"></i>
+              <i class="fa-brands fa-whatsapp icon"></i>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form class="form">
+              <label for="Name" class="label">Name</label>
+              <input type="text" class="input" placeholder="enter your Name" />
+              <label for="email" class="label">Email</label>
+              <input
+                type="Email"
+                class="input"
+                placeholder="enter your Email"
+              />
+              <label for="message" class="label">Message</label>
+              <textarea
+                name="message"
+                id=""
+                rows="10"
+                cols="20"
+                placeholder="enter your message"
+              ></textarea>
+              <button class="send">Send</button>
+            </form>
           </div>
         </div>
       </section>
