@@ -1,0 +1,9 @@
+.container {
+  border: 5px solid gray;
+}
+
+.col {
+  height:250px;
+  width:250px;
+  border: 2px solid black;
+}

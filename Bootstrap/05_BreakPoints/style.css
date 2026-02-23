@@ -1,0 +1,7 @@
+.container {
+  border: 5px solid black;
+}
+
+.col-md-6,.col-md-8,.col-md-4 {
+  border: 2px solid black;
+}
