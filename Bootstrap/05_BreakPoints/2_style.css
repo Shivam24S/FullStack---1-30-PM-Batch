@@ -1,0 +1,13 @@
+.row {
+  border: 2px solid black;
+}
+
+.col,
+.col-sm-2,
+.col-md-4,
+.col-lg-6,
+.col-md-3,
+.col-lg-4,
+.col-sm-4 {
+  border: 3px solid black;
+}

@@ -1,0 +1,20 @@
+.container {
+  border: 3px solid black;
+}
+
+.row {
+  border: 2px solid gainsboro;
+}
+
+.col-md-4,
+.col-md-8 {
+  border: 2px solid black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
