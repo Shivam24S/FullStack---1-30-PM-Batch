@@ -1,0 +1,12 @@
+
+
+
+.row{
+    border: 1px solid black;
+}
+
+.col-12{
+    border: 1px solid red;
+    height: 200px;
+    width: 400px;
+}

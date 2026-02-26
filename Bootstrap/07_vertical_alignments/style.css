@@ -1,0 +1,26 @@
+.container {
+  border: 4px solid black;
+}
+
+.row {
+  border:5px dotted gray;
+  height: 400px;
+}
+
+.col-md-4 {
+  border: 3px dashed blueviolet;
+  /* height: 100px; */
+}
+
+
+.column-1{
+    background-color: steelblue;
+}
+
+.column-2{
+    background-color: yellowgreen;
+}
+
+.column-3{
+    background-color: tomato;
+}
