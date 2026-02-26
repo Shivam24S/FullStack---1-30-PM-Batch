@@ -1,0 +1,13 @@
+
+.container {
+    border: 2px solid black;
+}
+
+.row{
+     border: 1px dashed blue;
+}
+
+.col-md-6{
+      border: 1px dashed red;
+      height: 100px;
+}

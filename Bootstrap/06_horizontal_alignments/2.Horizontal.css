@@ -1,0 +1,24 @@
+.container {
+  border: 2px solid black;
+}
+
+.row {
+  border: 1px dashed gray;
+}
+
+.col-md-3 {
+  border: 2px solid black;
+}
+
+
+.column-1{
+    background-color: slateblue;
+}
+
+.column-2{
+    background-color: sienna;
+}
+
+.column-3{
+    background-color: seagreen;
+}

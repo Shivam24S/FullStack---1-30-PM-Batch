@@ -1,0 +1,46 @@
+.container {
+  border: 3px dashed black;
+}
+
+.row {
+  border: 2px dotted gray;
+}
+
+.col-md-3 {
+  border: 1px solid black;
+  background-color: aquamarine;
+  height: 200px;
+}
+
+.col-md-2 {
+  border: 1px solid black;
+  height: 200px;
+}
+
+
+#col-1{
+    background-color: yellowgreen;
+}
+
+#col-2{
+    background-color:tomato;
+}
+
+#col-3{
+    background-color:teal;
+}
+
+#col-4{
+    background-color: gainsboro;
+}
+
+#col-5{
+    background-color: chocolate;
+}
+
+#col-6{
+    background-color: slateblue;
+}
+
+
+
