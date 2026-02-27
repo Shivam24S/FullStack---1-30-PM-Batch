@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container {
+  border: 4px solid white;
+}
+
+.row {
+  border: 3px dashed red;
+}
+
+.col-md-4 {
+  height: 200px;
+  width: 200px;
+  border: 2px dotted greenyellow;
+}
+
+.specific-row{
+    height: 600px;
+}
