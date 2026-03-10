@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  border: 4px dashed gray;
+}
+
+.row {
+  border: 3px dotted whitesmoke;
+}
+
+.col-md-4 {
+  border: 2px solid blueviolet;
+}
+img{
+    padding: 1rem;
+    margin-top: 20px;
+}
