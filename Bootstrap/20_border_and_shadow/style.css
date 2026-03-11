@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 5px dotted gray;
+}
+
+
+.col-md-4{
+    border: 2px dashed black;
+    height: 200px;
+    padding: 2rem;
+}
