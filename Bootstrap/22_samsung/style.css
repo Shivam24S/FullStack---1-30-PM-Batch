@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.navbar {
+  background-color: rgb(10, 10, 10);
+}
+
+.nav-link {
+  color: gray;
+  font-size: larger;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgb(34, 156, 255);
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.shop-card {
+  background-color: #111111;
+  color: white;
+  border-radius: 1rem;
+  transition: 0.5s scale;
+  width: 14vw;
+  
+  
+}
+
+.shop-card:hover {
+  border-color: #0dcae8;
+  scale: 1.1;
+}
