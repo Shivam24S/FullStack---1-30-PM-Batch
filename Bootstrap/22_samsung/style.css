@@ -48,3 +48,21 @@ body {
   border-color: #0dcae8;
   scale: 1.1;
 }
+
+
+#Product{
+  background-color: #111111;
+}
+
+.save{
+  font-size: 15px;
+  color: green;
+
+}
+
+.product-card{
+  background-color: #1A1A1A;
+  color:white;
+  border-radius: 1rem;
+}
+
