@@ -40,8 +40,6 @@ body {
   border-radius: 1rem;
   transition: 0.5s scale;
   width: 14vw;
-  
-  
 }
 
 .shop-card:hover {
@@ -49,25 +47,39 @@ body {
   scale: 1.1;
 }
 
-
-#Product{
+#Product {
   background-color: #111111;
 }
 
-.save{
+.save {
   font-size: 15px;
   color: green;
-
 }
 
-.product-card{
-  background-color: #1A1A1A;
-  color:white;
+.product-card {
+  background-color: #1a1a1a;
+  color: white;
   border-radius: 1rem;
 }
 
-#Experience{
-  background-color: #1428A0;
+#Experience {
+  background-color: #1428a0;
   height: 40vh;
   margin-top: 20px;
+}
+
+.accordion {
+  color: white;
+  
+}
+
+.accordion-button,.accordion-item {
+  background-color: #1a1a1a;
+  color: white;
+ 
+}
+
+
+.accordion-button{
+  height: 8vh;
 }
