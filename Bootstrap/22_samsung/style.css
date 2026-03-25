@@ -25,8 +25,8 @@ body {
 }
 
 .carousel-item img {
-  height: 90vh;
-  width: 100%;
+  max-height: 90vh;
+  min-width: 100%;
   object-fit: cover;
 }
 
@@ -62,24 +62,46 @@ body {
   border-radius: 1rem;
 }
 
+.product-card img {
+  min-height: 45vh;
+  width: 100%;
+}
+
 #Experience {
   background-color: #1428a0;
   height: 40vh;
   margin-top: 20px;
 }
 
+#faq{
+  background-color: #111111;
+}
+
 .accordion {
   color: white;
-  
 }
 
-.accordion-button,.accordion-item {
+.accordion-button,
+.accordion-item {
   background-color: #1a1a1a;
   color: white;
- 
 }
 
-
-.accordion-button{
+.accordion-button {
   height: 8vh;
+  color: white;
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapse) {
+  background-color: #111111;
+}
+
+.device-list {
+  list-style: none;
+}
+
+.email,
+#floatingInput {
+  background-color: #111111;
 }
