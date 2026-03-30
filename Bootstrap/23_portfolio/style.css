@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #6e4ef2;
+  --box-shadow:
+    rgba(12, 109, 255, 0.4) 0px 5px, rgba(12, 109, 255, 0.3) 0px 10px,
+    rgba(12, 109, 255, 0.2) 0px 15px, rgba(12, 109, 255, 0.1) 0px 20px,
+    rgba(8, 84, 247, 0.05) 0px 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-image: url(./assets/background.png);
+  background-color: #1f1f24fd;
+}
+
+.navbar {
+  background-color: #272730;
+  height: 4rem;
+  box-shadow: var(--box-shadow);
+}
+
+.nav-link {
+  color: white;
+}
+
+.name-color {
+  color: var(--primary-color);
+}
+.btn-color {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.profilePic {
+  height: 550px;
+}
+
+.section-heading {
+  color: var(--primary-color);
+}
