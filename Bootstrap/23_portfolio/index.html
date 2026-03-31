@@ -16,6 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -72,10 +79,10 @@
             class="row d-flex justify-content-center align-items-center gap-4"
           >
             <div class="col-12 col-md-6 d-flex flex-column gap-4 mt-5">
-              <div class="display-3 mt-5">
+              <div class="display-3 mt-5 fw-bold">
                 Hello I'm <span class="name-color">Shivam</span>
               </div>
-              <h3 class="name-color">
+              <h3 class="name-color fw-bold">
                 Software Engineer & Fullstack Developer
               </h3>
               <p>
@@ -99,12 +106,69 @@
           </div>
         </div>
       </section>
-      <section id="About">
+      <section id="about">
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
               <h1>About</h1>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div
+                class="card rounded-4 about-card shadow-lg d-flex flex-column justify-content-center align-items-center gap-2"
+              >
+                <img
+                  src="./assets/about.png"
+                  class="mt-3 img-fluid about-image rounded-circle"
+                  alt="about"
+                />
+                <div class="card-body text-center">
+                  <h2 class="card-title">Shivam</h2>
+                  <p class="card-text about-designation">
+                    Software Engineer & Fullstack Developer
+                  </p>
+                  <hr />
+                  <div
+                    class="experience d-flex gap-4 justify-content-center align-items-center"
+                  >
+                    <div class="text-1 text-secondary">
+                      <h2>100+</h2>
+                      <h5>Projects</h5>
+                    </div>
+                    <div class="text-1 text-secondary">
+                      <h2>3+</h2>
+                      <h5>Years</h5>
+                    </div>
+                    <div class="text-1 text-secondary">
+                      <h2>10+</h2>
+                      <h5>Awards</h5>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="buttons d-flex flex-column gap-2">
+                    <button
+                      class="btn text-white btn-outline-primary rounded-4"
+                    >
+                      <i class="fa-solid fa-download"></i> Download Resume
+                    </button>
+                    <button
+                      class="btn text-white btn-outline-primary rounded-4"
+                    >
+                      <i class="fa-solid fa-address-book"></i> Contact
+                    </button>
+                  </div>
+                  <hr />
+                  <div class="social-media">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-8"></div>
           </div>
         </div>
       </section>
