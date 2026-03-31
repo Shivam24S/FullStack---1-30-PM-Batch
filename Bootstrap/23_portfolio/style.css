@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #6e4ef2;
+  /* --primary-color: #6e4ef2; */
+  --primary-color: #0a72fc;
   --box-shadow:
     rgba(12, 109, 255, 0.4) 0px 5px, rgba(12, 109, 255, 0.3) 0px 10px,
     rgba(12, 109, 255, 0.2) 0px 15px, rgba(12, 109, 255, 0.1) 0px 20px,
@@ -15,8 +16,12 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
-  background-image: url(./assets/background.png);
-  background-color: #1f1f24fd;
+  background-color: #0f0f14;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+
+  background-size: 40px 40px;
 }
 
 .navbar {
