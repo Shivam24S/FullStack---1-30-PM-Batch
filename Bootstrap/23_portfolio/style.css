@@ -60,14 +60,34 @@ body {
 .about-card {
   background: #21242bd0;
   color: white;
-
+  box-shadow: var(--box-shadow);
 }
 
-.about-designation{
+.about-designation {
   color: var(--primary-color);
 }
 
+.social-media {
+  font-size: 40px;
+}
 
-.social-media{
-  font-size: 50px;
+.info-card {
+  background: #21242bd0;
+  color: white;
+  box-shadow: var(--box-shadow) !important;
+}
+
+.skill-card {
+  background: #21242bd0;
+  color: white;
+  /* box-shadow: var(--box-shadow) !important; */
+}
+
+.skill-card img {
+  height: 100px;
+  width: 100px;
+}
+
+.curve {
+  width: 250px;
 }
