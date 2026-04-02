@@ -56,11 +56,12 @@
                 <a class="nav-link" href="#">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#">Testimonials</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#">Contacts</a>
               </li>
@@ -110,11 +111,11 @@
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
-              <h1>About</h1>
+              <h1 class="fst-italic display-4 fw-bold text-white">About</h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3"
+                class="curve mb-3 img-fluid"
               />
             </div>
           </div>
@@ -270,11 +271,11 @@
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
-              <h1>My Skills</h1>
+              <h1 class="fst-italic display-4 fw-bold text-white">My Skills</h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3"
+                class="curve mb-3 img-fluid"
               />
             </div>
           </div>
@@ -439,93 +440,310 @@
       <section id="projects">
         <div class="container">
           <div class="row">
-            <div class="section-heading text-center mt-5">
-              <h1>Projects</h1>
+            <div class=" section-heading text-center mt-5">
+              <h1 class="fst-italic display-4 fw-bold text-white">Projects</h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3"
+                class="curve mb-3 img-fluid"
               />
             </div>
           </div>
           <div class="row mt-4">
-            <div
-              class="col-12 d-flex justify-content-center align-items-center"
+            <ul
+              class="nav nav-tabs d-flex justify-content-center align-items-center gap-3"
+              id="myTab"
+              role="tablist"
             >
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#home-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="home-tab-pane"
-                    aria-selected="true"
-                  >
-                    Frontend
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="profile-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#profile-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="profile-tab-pane"
-                    aria-selected="false"
-                  >
-                    Backend
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="contact-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#contact-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="contact-tab-pane"
-                    aria-selected="false"
-                  >
-                    Fullstack
-                  </button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="home-tab-pane"
-                  role="tabpanel"
-                  aria-labelledby="home-tab"
-                  tabindex="0"
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link btn btn-outline-primary rounded-pill text-white mb-2"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
                 >
-                  ...
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="profile-tab-pane"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                  tabindex="0"
+                  Frontend
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link btn btn-outline-primary rounded-pill text-white mb-2"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
                 >
-                  ...
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="contact-tab-pane"
-                  role="tabpanel"
-                  aria-labelledby="contact-tab"
-                  tabindex="0"
+                  Backend
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link btn btn-outline-primary rounded-pill text-white mb-2"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
                 >
-                  ...
+                  Fullstack
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div
+                  class="row d-flex justify-content-center align-items-center gap-2"
+                >
+                  <div class="col-md-5 mt-4 mb-5">
+                    <div class="card project-card rounded-4">
+                      <img
+                        src="./assets/projects/quiz.png"
+                        class="card-img-top rounded-4 img-fluid border border-primary"
+                        alt="quickReads"
+                      />
+                      <div class="card-body">
+                        <h3 class="card-title">Quiz App</h3>
+                        <p class="card-text">
+                          The Quiz Master (Quiz App) is a web application
+                          developed using React.js, designed to provide users
+                          with an interactive platform to test their knowledge
+                          through multiple-choice questions. The app offers a
+                          smooth and engaging quiz-taking experience.
+                        </p>
+                        <div class="project-button d-flex gap-3">
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Github</a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Live</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-5 mt-4 mb-5">
+                    <div class="card project-card rounded-4">
+                      <img
+                        src="./assets/projects/event.png"
+                        class="card-img-top rounded-4 img-fluid border border-primary"
+                        alt="quickReads"
+                      />
+                      <div class="card-body">
+                        <h3 class="card-title">Event Organize</h3>
+                        <p class="card-text">
+                          The Event Organize App is a sophisticated web
+                          application developed using React.js and the Tanstack,
+                          specifically React Query, for efficient data
+                          management and API communication. This application
+                          serves as a comprehensive platform.
+                        </p>
+                        <div class="project-button d-flex gap-3">
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Github</a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Live</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-               
+
+                <div
+                  class="row d-flex justify-content-center align-items-center gap-2"
+                >
+                  <div class="col-md-5 mt-4 mb-5">
+                    <div class="card project-card rounded-4">
+                      <img
+                        src="./assets/projects/foodie.png"
+                        class="card-img-top rounded-4 img-fluid border border-primary"
+                        alt="foodie"
+                      />
+                      <div class="card-body">
+                        <h3 class="card-title">Foodie Fiesta</h3>
+                        <p class="card-text">
+                          The Foodie-Fiesta (Food Order App) is a web
+                          application developed using React.js, leveraging the
+                          power of the React Context API for state management
+                          and organization. This application serves as a
+                          convenient platform for users to browse through
+                          various food items and place orders.
+                        </p>
+                        <div class="project-button d-flex gap-3">
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Github</a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Live</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-5 mt-4 mb-5">
+                    <div class="card project-card rounded-4">
+                      <img
+                        src="./assets/projects/travel.png"
+                        class="card-img-top rounded-4 img-fluid border border-primary"
+                        alt="quickReads"
+                      />
+                      <div class="card-body">
+                        <h3 class="card-title">TripVerse</h3>
+                        <p class="card-text project-cardText">
+                          The TripVerse Travel App is a modern web application
+                          built with React.js and Firebase for seamless trip
+                          planning and booking. It allows users to explore
+                          destinations, view curated travel packages, and access
+                          detailed trip information. Firebase Authentication
+                          provides secure user login, signup, and travel.
+                        </p>
+                        <div class="project-button d-flex gap-3">
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Github</a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Live</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div
+                class="tab-pane fade"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <div
+                  class="row d-flex justify-content-center align-items-center gap-2"
+                >
+                  <div class="col-md-5 mt-4 mb-5">
+                    <div class="card project-card rounded-4">
+                      <img
+                        src="./assets/projects/quiz.png"
+                        class="card-img-top rounded-4 img-fluid border border-primary"
+                        alt="quickReads"
+                      />
+                      <div class="card-body">
+                        <h3 class="card-title">Quick Reads AI</h3>
+                        <p class="card-text">
+                          Built a smart blog app using MERN stack, TanStack
+                          Query, Tailwind CSS, DaisyUI, and Redux Toolkit.
+                          Integrated Facebook BART for AI-generated blog
+                          summaries with toggle view. Secured with JWT auth,
+                          profile CRUD via Multer, and Cloudinary for media
+                          uploads.
+                        </p>
+                        <div class="project-button d-flex gap-3">
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Github</a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Live</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-5 mt-4 mb-5">
+                    <div class="card project-card rounded-4">
+                      <img
+                        src="./assets/projects/quiz.png"
+                        class="card-img-top rounded-4 img-fluid border border-primary"
+                        alt="quickReads"
+                      />
+                      <div class="card-body">
+                        <h3 class="card-title">Quick Reads AI</h3>
+                        <p class="card-text">
+                          Built a smart blog app using MERN stack, TanStack
+                          Query, Tailwind CSS, DaisyUI, and Redux Toolkit.
+                          Integrated Facebook BART for AI-generated blog
+                          summaries with toggle view. Secured with JWT auth,
+                          profile CRUD via Multer, and Cloudinary for media
+                          uploads.
+                        </p>
+                        <div class="project-button d-flex gap-3">
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Github</a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary btn-lg text-white"
+                            >Live</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact-tab-pane"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
+                Fullstack Project here
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="container">
+          <div class="row">
+            <div class="section-heading text-center mt-5">
+              <h1 class="fst-italic display-4 fw-bold text-white" >Testimonials</h1>
+              <img
+                src="./assets/curlywaves_primary.svg"
+                alt="curve"
+                class="curve mb-3 img-fluid"
+              />
             </div>
           </div>
         </div>

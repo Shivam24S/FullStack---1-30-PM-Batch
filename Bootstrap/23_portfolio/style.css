@@ -89,5 +89,11 @@ body {
 }
 
 .curve {
-  width: 250px;
+  width: 350px;
+}
+
+.project-card {
+  background-color: #21242bd0;
+  color: white;
+  box-shadow: var(--box-shadow);
 }
