@@ -102,7 +102,6 @@ body {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-
 }
 
 .swiper-slide {
@@ -126,3 +125,24 @@ body {
   max-height: 10rem;
   max-width: 10rem;
 }
+
+.service-card {
+  background-color: #21242bd0;
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-card,
+.contact-form-card {
+  background-color: transparent;
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-card-body {
+  background-color: #21242bd0;
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+
+
