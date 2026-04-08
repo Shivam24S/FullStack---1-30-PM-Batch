@@ -23,6 +23,7 @@ body {
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 
   background-size: 40px 40px;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -33,6 +34,10 @@ body {
 
 .nav-link {
   color: white;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
 }
 
 .name-color {
@@ -61,6 +66,11 @@ body {
   background: #21242bd0;
   color: white;
   box-shadow: var(--box-shadow);
+  transition: all 1s;
+}
+
+.about-card:hover {
+  transform: scale(1.1);
 }
 
 .about-designation {
@@ -75,17 +85,27 @@ body {
   background: #21242bd0;
   color: white;
   box-shadow: var(--box-shadow) !important;
+  transition: all 1s;
+}
+.info-card:hover {
+  transform: translateY(-20px);
 }
 
 .skill-card {
   background: #21242bd0;
   color: white;
   /* box-shadow: var(--box-shadow) !important; */
+  transition: all 0.5s ease;
 }
 
 .skill-card img {
   height: 100px;
   width: 100px;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
 }
 
 .curve {
@@ -95,6 +115,10 @@ body {
 .project-card {
   background-color: #21242bd0;
   color: white;
+  transition: all 0.8s ease;
+}
+
+.project-card:hover {
   box-shadow: var(--box-shadow);
 }
 
@@ -129,6 +153,11 @@ body {
 .service-card {
   background-color: #21242bd0;
   color: white;
+  transition: all 0.8s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
   box-shadow: var(--box-shadow);
 }
 
@@ -136,6 +165,13 @@ body {
 .contact-form-card {
   background-color: transparent;
   color: white;
+  transition: all 1s ease;
+}
+
+.contact-card:hover {
+  box-shadow: var(--box-shadow);
+}
+.contact-form-card:hover {
   box-shadow: var(--box-shadow);
 }
 
@@ -144,5 +180,365 @@ body {
   color: white;
   box-shadow: var(--box-shadow);
 }
+:root {
+  --primary-color: #0a72fc;
+  --box-shadow:
+    rgba(12, 109, 255, 0.4) 0px 5px, rgba(12, 109, 255, 0.3) 0px 10px,
+    rgba(12, 109, 255, 0.2) 0px 15px, rgba(12, 109, 255, 0.1) 0px 20px,
+    rgba(8, 84, 247, 0.05) 0px 25px;
 
+  /* Dark mode (default) */
+  --background-color: #0f0f14;
+  --text-color: #ffffff;
+  --text-muted: #a0a8c0;
+  --card-bg: #21242bd0;
+  --nav-link-color: #ffffff;
+  --input-bg: #21242b;
+  --input-color: #ffffff;
+  --grid-line: rgba(255, 255, 255, 0.05);
+  --testimonial-card-bg: transparent;
+  --contact-card-bg: transparent;
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* Glassmorphism Light Mode */
+body.light-mode {
+  --background-color: #dce8ff;
+  --text-color: #0d1b3e;
+  --text-muted: #3a5080;
+  --card-bg: rgba(255, 255, 255, 0.45);
+  --nav-link-color: #0d1b3e;
+  --input-bg: rgba(255, 255, 255, 0.6);
+  --input-color: #0d1b3e;
+  --grid-line: rgba(10, 114, 252, 0.07);
+  --testimonial-card-bg: rgba(255, 255, 255, 0.4);
+  --contact-card-bg: rgba(255, 255, 255, 0.35);
+  --glass-border: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Light mode background blobs for depth */
+body.light-mode::before {
+  content: "";
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(10, 114, 252, 0.2), transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+body.light-mode::after {
+  content: "";
+  position: fixed;
+  bottom: -100px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 179, 255, 0.2), transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.navbar {
+  background-color: var(--background-color);
+  height: 4rem;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.4s ease;
+}
+
+body.light-mode .navbar {
+  background: rgba(220, 232, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 24px rgba(10, 114, 252, 0.1);
+}
+
+.nav-link {
+  color: var(--nav-link-color);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar-brand {
+  color: var(--text-color) !important;
+}
+
+.theme-btn {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+  border-radius: 20px;
+  padding: 4px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.theme-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.name-color {
+  color: var(--primary-color);
+}
+
+.btn-color {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.profilePic {
+  height: 550px;
+}
+
+.section-heading {
+  color: var(--primary-color);
+}
+
+.about-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: top center;
+  border: 3px solid var(--primary-color);
+}
+
+.about-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+  transition: all 0.4s ease;
+}
+
+body.light-mode .about-card {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: 0 8px 32px rgba(10, 114, 252, 0.12);
+}
+
+.about-card:hover {
+  transform: scale(1.1);
+}
+
+.about-designation {
+  color: var(--primary-color);
+}
+
+.social-media {
+  font-size: 40px;
+}
+
+.info-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow) !important;
+  transition: all 0.4s ease;
+}
+
+body.light-mode .info-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: 0 4px 20px rgba(10, 114, 252, 0.1) !important;
+}
+
+.info-card:hover {
+  transform: translateY(-20px);
+}
+
+.skill-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+
+body.light-mode .skill-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border) !important;
+}
+
+.skill-card img {
+  height: 100px;
+  width: 100px;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
+}
+
+.curve {
+  width: 350px;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: all 0.8s ease;
+}
+
+body.light-mode .project-card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border) !important;
+}
+
+.project-card:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.testimonial-card {
+  background-color: var(--testimonial-card-bg);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+  transition: background 0.4s ease;
+}
+
+body.light-mode .testimonial-card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: 0 8px 32px rgba(10, 114, 252, 0.1);
+}
+
+.testimonial-card img {
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
+.service-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: all 0.8s ease;
+}
+
+body.light-mode .service-card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border) !important;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-card,
+.contact-form-card {
+  background-color: var(--contact-card-bg);
+  color: var(--text-color);
+  transition: all 1s ease;
+}
+
+body.light-mode .contact-card,
+body.light-mode .contact-form-card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+
+.contact-card:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.contact-form-card:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.contact-card-body {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+}
+
+body.light-mode .contact-card-body {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 20px rgba(10, 114, 252, 0.1);
+}
+
+.form-control {
+  background-color: var(--input-bg) !important;
+  color: var(--input-color) !important;
+  border-color: var(--primary-color) !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode .form-control {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.form-floating label {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* Light mode text fixes */
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6,
+body.light-mode .card-text,
+body.light-mode .card-title,
+body.light-mode .about-text {
+  color: var(--text-color);
+}
+
+body.light-mode .text-secondary {
+  color: var(--text-muted) !important;
+}
+
+body.light-mode .text-white {
+  color: var(--text-color) !important;
+}
 

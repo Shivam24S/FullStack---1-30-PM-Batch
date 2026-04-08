@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="./assets/profilePic.png" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,14 +28,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css">
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg rounded-4 mt-3">
+      <nav class="navbar navbar-expand-lg rounded-4 mt-3" data-aos="fade-down">
         <div class="container">
-          <a class="navbar-brand fw-bolder text-light" href="#">Shivam</a>
+          <a class="navbar-brand fw-bolder text-light fst-italic magictime vanishIn" href="#"
+            >Shivam</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -49,30 +57,30 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skill">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
+                <a class="nav-link" href="#contact">Contacts</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <button class="btn text-white">Theme</button>
+             <button class="btn theme-btn magictime vanishIn" onclick="toggleTheme()">☾ Dark</button>
             </form>
           </div>
         </div>
@@ -84,7 +92,7 @@
           <div
             class="row d-flex justify-content-center align-items-center gap-4"
           >
-            <div class="col-12 col-md-6 d-flex flex-column gap-4 mt-5">
+            <div class="col-12 col-md-6 d-flex flex-column gap-4 mt-5" data-aos="fade-right">
               <div class="display-3 mt-5 fw-bold">
                 Hello I'm <span class="name-color">Shivam</span>
               </div>
@@ -97,12 +105,12 @@
                 Focused on performance, security, and clean architecture.
               </p>
               <div>
-                <button class="btn btn-color rounded-pill">
+                <a class="btn btn-color rounded-pill" href="#projects">
                   View My Works
-                </button>
+                </a>
               </div>
             </div>
-            <div class="col-12 col-md-4 text-end">
+            <div class="col-12 col-md-4 text-end" data-aos="fade-left">
               <img
                 class="img-fluid profilePic"
                 src="./assets/profilePic.png"
@@ -116,16 +124,16 @@
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
-              <h1 class="fst-italic display-4 fw-bold text-white">About</h1>
+              <h1 class="fst-italic display-4 fw-bold text-white magictime vanishIn">About</h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3 img-fluid"
+                class="curve mb-3 img-fluid magictime swashIn"
               />
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="flip-left">
               <div
                 class="card mb-5 rounded-4 about-card shadow-lg d-flex flex-column justify-content-center align-items-center gap-2"
               >
@@ -181,7 +189,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8" data-aos="flip-right">
               <div class="mt-2 fw-bold fs-6 fst-italic about-text">
                 I’m Shivam Shrivastav, a passionate Software Engineer and
                 Full-Stack Developer with a strong focus on building scalable,
@@ -276,17 +284,17 @@
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
-              <h1 class="fst-italic display-4 fw-bold text-white">My Skills</h1>
+              <h1 class="fst-italic display-4 fw-bold text-white  magictime vanishIn">My Skills</h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3 img-fluid"
+                class="curve mb-3 img-fluid  magictime swashIn"
               />
             </div>
           </div>
 
           <div
-            class="row mt-3 d-flex justify-content-center align-items-center"
+            class="row mt-3 d-flex justify-content-center align-items-center"  data-aos="zoom-in-right"
           >
             <div class="col-md-2">
               <div
@@ -294,7 +302,7 @@
               >
                 <img
                   src="./assets/skiils/html-5-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="html"
                 />
                 <div class="card-body">
@@ -308,7 +316,7 @@
               >
                 <img
                   src="./assets/skiils/css-fill-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="html"
                 />
                 <div class="card-body">
@@ -323,7 +331,7 @@
               >
                 <img
                   src="./assets/skiils/bootstrap-fill-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="html"
                 />
                 <div class="card-body">
@@ -338,7 +346,7 @@
               >
                 <img
                   src="./assets/skiils/js-square-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="js"
                 />
                 <div class="card-body">
@@ -353,7 +361,7 @@
               >
                 <img
                   src="./assets/skiils/react-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="js"
                 />
                 <div class="card-body">
@@ -363,7 +371,7 @@
             </div>
           </div>
           <div
-            class="row mt-3 d-flex justify-content-center align-items-center"
+            class="row mt-3 d-flex justify-content-center align-items-center"  data-aos="zoom-in-left"
           >
             <div class="col-md-2">
               <div
@@ -371,7 +379,7 @@
               >
                 <img
                   src="./assets/skiils/tailwind-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="html"
                 />
                 <div class="card-body">
@@ -385,7 +393,7 @@
               >
                 <img
                   src="./assets/skiils/next-16-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="next"
                 />
                 <div class="card-body">
@@ -400,7 +408,7 @@
               >
                 <img
                   src="./assets/skiils/node-js-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="html"
                 />
                 <div class="card-body">
@@ -415,7 +423,7 @@
               >
                 <img
                   src="./assets/skiils/php-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="js"
                 />
                 <div class="card-body">
@@ -430,7 +438,7 @@
               >
                 <img
                   src="./assets/skiils/api-svgrepo-com.svg"
-                  class="card-img-top img-fluid mt-3"
+                  class="card-img-top img-fluid mt-3 magictime boingInUp"
                   alt="js"
                 />
                 <div class="card-body">
@@ -446,11 +454,11 @@
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
-              <h1 class="fst-italic display-4 fw-bold text-white">Projects</h1>
+              <h1 class="fst-italic display-4 fw-bold text-white magictime vanishIn">Projects</h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3 img-fluid"
+                class="curve mb-3 img-fluid magictime swashIn"
               />
             </div>
           </div>
@@ -514,7 +522,7 @@
                 <div
                   class="row d-flex justify-content-center align-items-center gap-2"
                 >
-                  <div class="col-md-5 mt-4 mb-5">
+                  <div class="col-md-5 mt-4 mb-5" data-aos="flip-left">
                     <div class="card project-card rounded-4">
                       <img
                         src="./assets/projects/quiz.png"
@@ -546,7 +554,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-5 mt-4 mb-5">
+                  <div class="col-md-5 mt-4 mb-5" data-aos="flip-right">
                     <div class="card project-card rounded-4">
                       <img
                         src="./assets/projects/event.png"
@@ -582,7 +590,7 @@
                 <div
                   class="row d-flex justify-content-center align-items-center gap-2"
                 >
-                  <div class="col-md-5 mt-4 mb-5">
+                  <div class="col-md-5 mt-4 mb-5" data-aos="flip-left">
                     <div class="card project-card rounded-4">
                       <img
                         src="./assets/projects/foodie.png"
@@ -615,7 +623,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-5 mt-4 mb-5">
+                  <div class="col-md-5 mt-4 mb-5" data-aos="flip-right">
                     <div class="card project-card rounded-4">
                       <img
                         src="./assets/projects/travel.png"
@@ -743,13 +751,13 @@
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
-              <h1 class="fst-italic display-4 fw-bold text-white">
+              <h1 class="fst-italic display-4 fw-bold text-white magictime vanishIn">
                 Testimonials
               </h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3 img-fluid"
+                class="curve mb-3 img-fluid magictime swashIn"
               />
             </div>
           </div>
@@ -921,16 +929,16 @@
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
-              <h1 class="fst-italic display-4 fw-bold text-white">Services</h1>
+              <h1 class="fst-italic display-4 fw-bold text-white magictime vanishIn">Services</h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3 img-fluid"
+                class="curve mb-3 img-fluid magictime swashIn"
               />
             </div>
           </div>
           <div class="row d-flex mb-3">
-            <div class="col-12 col-md-4 mb-5">
+            <div class="col-12 col-md-4 mb-5" data-aos="flip-down">
               <div
                 class="card rounded-4 service-card d-flex justify-content-center align-items-center"
               >
@@ -946,7 +954,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 mb-5">
+            <div class="col-12 col-md-4 mb-5" data-aos="flip-down">
               <div
                 class="card rounded-4 service-card d-flex justify-content-center align-items-center"
               >
@@ -964,7 +972,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 mb-5">
+            <div class="col-12 col-md-4 mb-5" data-aos="flip-down">
               <div
                 class="card rounded-4 service-card d-flex justify-content-center align-items-center"
               >
@@ -986,7 +994,7 @@
             </div>
           </div>
           <div class="row d-flex mb-3">
-            <div class="col-12 col-md-4 mb-5">
+            <div class="col-12 col-md-4 mb-5" data-aos="flip-up">
               <div
                 class="card rounded-4 service-card d-flex justify-content-center align-items-center"
               >
@@ -1004,7 +1012,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 mb-5">
+            <div class="col-12 col-md-4 mb-5" data-aos="flip-up">
               <div
                 class="card rounded-4 service-card d-flex justify-content-center align-items-center"
               >
@@ -1022,7 +1030,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 mb-5">
+            <div class="col-12 col-md-4 mb-5" data-aos="flip-up">
               <div
                 class="card rounded-4 service-card d-flex justify-content-center align-items-center"
               >
@@ -1047,15 +1055,15 @@
         <div class="container">
           <div class="row">
             <div class="section-heading text-center mt-5">
-              <h1 class="fst-italic display-4 fw-bold text-white">Contact</h1>
+              <h1 class="fst-italic display-4 fw-bold text-white magictime vanishIn">Contact</h1>
               <img
                 src="./assets/curlywaves_primary.svg"
                 alt="curve"
-                class="curve mb-3 img-fluid"
+                class="curve mb-3 img-fluid magictime swashIn"
               />
             </div>
             <div class="row d-flex justify-content-center align-items-center">
-              <div class="col-12 col-md-5">
+              <div class="col-12 col-md-5"  data-aos="fade-up-right">
                 <div
                   class="card mb-5 border border-primary border-2 rounded-4 contact-card d-flex flex-column gap-5 p-4"
                 >
@@ -1085,7 +1093,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6"  data-aos="fade-up-left">
                 <div
                   class="card contact-form-card mb-5 border border-primary border-2 rounded-4 d-flex flex-column gap-5 p-4"
                 >
@@ -1173,5 +1181,35 @@
         },
       });
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+    </script>
+    <script>
+  // Apply saved theme on load (dark is default)
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light') {
+    document.body.classList.add('light-mode');
+  }
+
+  // Update button label on load
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.querySelector('.theme-btn');
+    if (btn) {
+      const isLight = document.body.classList.contains('light-mode');
+      btn.textContent = isLight ? '☀ Light' : '☾ Dark';
+    }
+  });
+
+  function toggleTheme() {
+    const isLight = document.body.classList.toggle('light-mode');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    const btn = document.querySelector('.theme-btn');
+    if (btn) btn.textContent = isLight ? '☀ Light' : '☾ Dark';
+  }
+</script>
   </body>
 </html>
