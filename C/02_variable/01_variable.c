@@ -30,5 +30,12 @@ int main()
     // int num = 50;
     // printf("%d", num);
 
+    if (1)
+    {
+        int num = 25;
+
+        printf("\nagain declared, %d", num);
+    }
+
     return 0;
 }
